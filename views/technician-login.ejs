@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>technician login</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo2.png">
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Welcome Back, Service Partner!</h1>
+            <img src="/images/profile-user.png" alt="">
+            <form action="/technician-login" method="post">
+                <div class="form">
+                    <label for="mobileNo">Mobile No:</label>
+                    <input type="number" id="mobileNo" name="mobileNo" required placeholder="enter mobile number"><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter password"><br>
+                    <button type="submit">Login</button>
+                    <div class="end">Don't have an account?<a href="/user-register"> Register here</a></div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
