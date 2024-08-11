@@ -10,27 +10,62 @@
 </head>
 
 <body>
-
     <div class="container">
         <div class="box">
             <h1>Technician Registration</h1>
             <img src="/images/profile_16331016.png" alt="">
-            <form action="/technician-register" method="post">
+            <form action="/technician-register" method="post" enctype="multipart/form-data">
                 <div class="form">
-                    <label for="username">Name:</label>
-                    <input type="text" id="username" name="username" required placeholder="Enter your name"><br>
-                    <label for="mobileNo">Mobile No:</label>
-                    <input type="number" id="mobileNo" name="mobileNo" required placeholder="Enter mobile number"><br>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required placeholder="Enter password"><br>
+                    <div class="formInput">
+                        <label for="username">Name:</label>
+                        <input type="text" id="username" name="username" required placeholder="Enter your name">
+                    </div>
+
+                    <div class="formInput">
+
+                        <label for="mobileNo">Mobile No:</label>
+                        <input type="number" id="mobileNo" name="mobileNo" required placeholder="Enter mobile number">
+                    </div>
+
+                    <div class="formInput">
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required placeholder="Enter password"></div>
+                        <div class="formInput">
+                        
+
+                        <label for="businessName">Business Name:</label>
+                        <input type="text" id="businessName" name="businessName" placeholder="Enter business name"></div>
+                        <div class="formInput">
+                        
+
+                        <label for="garageAddress">Garage Address:</label>
+                        <input type="text" id="garageAddress" name="garageAddress" required
+                            placeholder="Enter garage address">
+                    </div>
+                    <div class="formInput">
+
+                        <label for="experience">Years of Experience:</label>
+                        <input type="number" id="experience" name="experience" required
+                            placeholder="Enter years of experience">
+                    </div>
+                    <div class="formInput">
+
+                        <label for="certifications">Upload Certifications:</label>
+                        <input type="file" id="certifications" name="certifications" required></div>
+                        <div class="formInput">
+                        
+
+                        <label for="governmentId">Upload Government ID:</label>
+                        <input type="file" id="governmentId" name="governmentId" required>
+
+                    </div>
                     <button type="submit">Register</button>
                     <div class="end">Already have an account?<a href="/technician-login"> Login here</a></div>
                 </div>
             </form>
-
         </div>
     </div>
-
 </body>
 
 </html>

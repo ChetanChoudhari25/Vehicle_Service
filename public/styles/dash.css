@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: Outfit;
 }
 
 .section-bar{
@@ -19,7 +22,6 @@
     border-bottom: 1px solid grey;
     flex-direction: column;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 10px;
 }
 .logo img{
@@ -51,7 +53,6 @@
 .option ul li  a{
     text-decoration: none;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25px;
 }
 .logout{
@@ -69,7 +70,6 @@
 .logout a{
     text-decoration: none;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25px;
 }
 
@@ -96,20 +96,60 @@
 .top-bar ul li{
     cursor: pointer;
     font-size: 30px;
-    list-style: none; 
+    list-style: none;
 }
 
 .content{
+    position: relative;
     background-color: #001e2b;
     margin-left: 35vh;
     width: calc(100vw - 35vh);
     height: calc(100vh - 61px);
 }
 
-#container {
-    position: relative;
+.content-list{
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    border: 2px solid grey;
     background-color: black;
-    width: 20%;
+    color: white;
+    top: 5%;
+    left: 5%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+    overflow-y: auto;
+}
+.content-list::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Hide scrollbar */
+}
+
+.content-list h2{
+    padding: 10px 0;
+}
+
+.content-list table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    
+}
+.content-list th, .content-list td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid white;
+
+}
+
+
+#container {
+    position: absolute;
+    background-color: black;
+    width: 25%;
+    height: 80%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -117,6 +157,9 @@
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 15px;
+    right: 5%;
+    top: 5%;
+    box-sizing: border-box;
 }
 
 .pic img {
@@ -130,7 +173,6 @@
     border: 1px solid grey;
     width: 90%;
     padding: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #askButton {
@@ -139,7 +181,6 @@
     border-radius: 15px;
     border: 1px solid grey;
     margin-top: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #answerContainer {
@@ -148,7 +189,6 @@
     border: 1px solid grey;
     border-radius: 15px;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 150px;
+    height: 250px;
     overflow: auto;
 }
