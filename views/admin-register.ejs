@@ -13,12 +13,18 @@
         <div class="box">
             <h1>Admin Registration</h1>
             <form action="/admin-register" method="post">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required placeholder="Enter username"><br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required placeholder="Enter password"><br>
+                <div class="form">
+                    <div class="formInput">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required placeholder="Enter username"><br>
+                    </div>
+                    <div class="formInput">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required placeholder="Enter password"><br>
+                    </div>
                 <button type="submit">Register</button>
                 <div class="end">Already have an account? <a href="/admin-login">Login here</a></div>
+            </div>
             </form>
         </div>
     </div>

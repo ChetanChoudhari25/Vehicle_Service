@@ -1,3 +1,12 @@
+const sideMenu = document.querySelector('.optionmob');
+
+function openMenu(){
+    sideMenu.style.display = 'flex';
+}
+function closeMenu(){
+    sideMenu.style.display = 'none';
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const qaItems = document.querySelectorAll('.qa-item');
 

@@ -16,10 +16,14 @@
             <img src="/images/profile-user.png" alt="">
             <form action="/user-login" method="post">
                 <div class="form">
-                    <label for="mobileNo">Mobile No:</label>
-                    <input type="number" id="mobileNo" name="mobileNo" required placeholder="enter mobile number"><br>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required placeholder="Enter password"><br>
+                    <div class="formInput">
+                        <label for="mobileNo">Mobile No:</label>
+                        <input type="number" id="mobileNo" name="mobileNo" required placeholder="enter mobile number"><br>
+                    </div>
+                    <div class="formInput">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required placeholder="Enter password"><br>
+                    </div>
                     <button type="submit">Login</button>
                     <div class="end">Don't have an account?<a href="/user-register"> Register here</a></div>
                 </div>

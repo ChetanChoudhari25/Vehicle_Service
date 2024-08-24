@@ -17,6 +17,7 @@
             <img src="/images/logo2.png" alt="">
             <h1>Auto Care</h1>
         </div>
+        <i class='bx bx-menu' onclick="openMenu()"></i>
         <div class="option">
             <ul>
                 <li>Home</li>
@@ -31,6 +32,19 @@
             <!-- <a href="/user-login">User LogIn</a> -->
         </div>
     </nav>
+    <div class="optionmob">
+        
+        <i class='bx bx-x' onclick="closeMenu()"></i>
+        <ul>
+            <li onclick="closeMenu()">Home</li>
+            <li onclick="closeMenu()">About</li>
+            <li onclick="closeMenu()">Services</li>
+            <li onclick="closeMenu()">Market Place</li>
+            <li onclick="closeMenu()">Contact</li>
+            <li onclick="closeMenu()"><a href="/technician-login">Technician LogIn</a></li>
+            <li onclick="closeMenu()"><a href="/admin-login" class="btn">Admin Login</a></li>
+        </ul> 
+    </div>
     <div class="home">
         <div class="box"></div>
         <div class="content">
