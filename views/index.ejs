@@ -20,13 +20,13 @@
         <i class='bx bx-menu' onclick="openMenu()"></i>
         <div class="option">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Market Place</li>
-                <li>Contact</li>
-                <li><a href="/technician-login">Technician LogIn</a></li>
-                <li><a href="/admin-login" class="btn">Admin Login</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#choose">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#marketplace">Market Place</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <button><a href="/technician-login">Technician LogIn</a></button>
+                <button><a href="/admin-login">Admin Login</a></button>
             </ul> 
             <!-- <a href="/admin-register">Admin Register</a> -->
             <!-- <a href="/user-login">User LogIn</a> -->
@@ -36,11 +36,11 @@
         
         <i class='bx bx-x' onclick="closeMenu()"></i>
         <ul>
-            <li onclick="closeMenu()">Home</li>
-            <li onclick="closeMenu()">About</li>
-            <li onclick="closeMenu()">Services</li>
-            <li onclick="closeMenu()">Market Place</li>
-            <li onclick="closeMenu()">Contact</li>
+            <li onclick="closeMenu()"><a href="/">Home</a></li>
+            <li onclick="closeMenu()"><a href="#choose">About</a></li>
+            <li onclick="closeMenu()"><a href="#services">Services</a></li>
+            <li onclick="closeMenu()"><a href="#marketplace">Market Place</a></li>
+            <li onclick="closeMenu()"><a href="#contact">Contact</a></li>
             <li onclick="closeMenu()"><a href="/technician-login">Technician LogIn</a></li>
             <li onclick="closeMenu()"><a href="/admin-login" class="btn">Admin Login</a></li>
         </ul> 
@@ -57,7 +57,7 @@
             <a href="/user-register">User Register</a>
         </div>
     </div>
-    <div class="services">
+    <div class="services" id="services">
         <div class="container">
             <h1>Our Services</h1>
             <p>At Auto care, we offer a wide range of automobile services to keep your vehicle in top condition. Our
@@ -124,7 +124,7 @@
             </div>
         </div>
     </div>
-    <div class="choose">
+    <div class="choose" id="choose">
         <h1>Why Choose Us !</h1>
         <div class="serv">
             <div class="subserv">
@@ -165,7 +165,7 @@
             </div>
         </div>
     </div>
-    <section class="marketplace">
+    <section class="marketplace" id="marketplace">
         <h1>Vehicle Marketplace</h1>
 
         <div class="marketplace-items">
@@ -258,7 +258,7 @@
                 </div>
                 <div class="answer">
                     <p>You can book an appointment through our website by visiting the "Book Service" page or by calling
-                        our customer service at [your phone number].</p>
+                        our customer service at [phone number].</p>
                 </div>
             </div>
             <div class="qa-item">
@@ -277,7 +277,7 @@
                     <button class="toggle-answer">&#9660;</button>
                 </div>
                 <div class="answer">
-                    <p>Our main service center is located at [your address]. For a full list of our locations, please
+                    <p>Our main service center is located at [address]. For a full list of our locations, please
                         visit the "Locations" page on our website.</p>
                 </div>
             </div>
@@ -370,6 +370,24 @@
             </div>
         </div>
     </div>
+
+    <!-- ----------- contact ----------- -->
+    <div id="contact" class="contact-section">
+        <h3>Contact Us</h3>
+                <p>123 Service Center Road City, State, 12345<br>Phone: (123) 456-7890 Email:
+                    info@vehicleservice.com</p>
+        <form method="POST" action="https://api.web3forms.com/submit" class="form-container">
+            <input type="hidden" name="access_key" value="9f47c491-6418-4036-9a2d-4b8caaadfbaa">
+
+            <div class="input-grid">
+                <input type="text" placeholder="Enter your name" required name="name" class="input-field">
+                <input type="email" placeholder="Enter your email" required name="email" class="input-field">
+            </div>
+            <textarea rows="6" placeholder="Enter your message" required name="message" class="textarea-field"></textarea>
+
+            <button class="submit-button">Submit now</button>
+        </form>
+    </div>
     <footer>
         <div class="footer-container">
             <div class="footer-column">
@@ -385,11 +403,6 @@
                     <li><a href="/user-login">Login</a></li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Contact Us</h3>
-                <p>123 Service Center Road<br>City, State, 12345<br>Phone: (123) 456-7890<br>Email:
-                    info@vehicleservice.com</p>
             </div>
             <div class="footer-column">
                 <h3>Follow Us</h3>
